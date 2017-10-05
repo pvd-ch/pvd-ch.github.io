@@ -7,6 +7,10 @@
 	"pillars": [
 		{
 			"name": "core strategies",
+			"description": [
+				"Current services offered to customers that provide a revenue stream",
+				"Includes, but is not limited to, energy production, energy sales, and additional services such as telecommunications or consulting."
+			],
 			"levels": [
 				[
 					"Energy generation from one source (i.e. nuclear)",
@@ -28,6 +32,10 @@
 		},
 		{
 			"name": "innovation & flexibility",
+			"description": [
+				"Investments in new technologies or secondary markets that are not implemented in the current business model nor providing a revenue stream. ",
+				"Willingness and ability to transition to new core strategies"
+			],
 			"levels": [
 				[
 					"No resources allocated to developing new technologies",
@@ -48,6 +56,11 @@
 		},
 		{
 			"name": "customer interface",
+			"description": [
+				"Community involvement, customer service, educational programs",
+				"Understanding customer needs",
+				"Education programs can be related to knowledge and awareness of sustainability, green energy, reducing consumption, and price indexes"
+			],
 			"levels": [
 				[
 					"Limited interactions with customers",
@@ -69,6 +82,11 @@
 		},
 		{
 			"name": "revenue model",
+			"description": [
+				"Net profits gained from offered services",
+				"Strategies to implement new technologies to profit ",
+				"Revenue streams"
+			],
 			"levels": [
 				[
 					"Negative trends in profit year-to-year",
