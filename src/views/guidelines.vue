@@ -5,8 +5,16 @@
 </template>
 
 <script>
+import score from '../data/score.json';
+
 export default {
-  name: 'view-guidelines'
+	name: 'view-guidelines',
+
+	data() {
+		return {
+			score
+		};
+	}
 }
 </script>
 
