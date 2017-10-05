@@ -1,0 +1,90 @@
+{
+	"levels": [
+		"resistant",
+		"responsive",
+		"sustainable"
+	],
+	"pillars": [
+		{
+			"name": "core strategies",
+			"levels": [
+				[
+					"Energy generation from one source (i.e. nuclear)",
+					"Non-renewable source",
+					"Lack of diversification",
+					"Only offers energy production services"
+				],
+				[
+					"Mixture of non-renewable and renewable energy production",
+					"Some additional services offered (i.e. telecommunications)",
+					"Limited diversification"
+				],
+				[
+					"Primarily renewable energy production from multiple sources",
+					"Abundant additional services offered",
+					"Focus on diversification"
+				]
+			]
+		},
+		{
+			"name": "innovation & flexibility",
+			"levels": [
+				[
+					"No resources allocated to developing new technologies",
+					"Against new technology trends in the market",
+					"Lack of experimentation"
+				],
+				[
+					"Limited resources dedicated to new technologies",
+					"Lack of strategic plans for implementing new technologies",
+					"Some experimentation"
+				],
+				[
+					"Resources dedicated to new technologies and secondary markets",
+					"Strategic plans for implementation of niche technologies",
+					"Heavy experimentation"
+				]
+			]
+		},
+		{
+			"name": "customer interface",
+			"levels": [
+				[
+					"Limited interactions with customers",
+					"Unaware of consumer needs",
+					"Limited to no customer-oriented services (i.e. consulting)"
+				],
+				[
+					"Some interactions with customers",
+					"Actively attempting to understand consumer needs",
+					"Some customer-oriented services"
+				],
+				[
+					"Customer focused",
+					"Understand needs of the consumer",
+					"Community outreach",
+					"Customer service programs"
+				]
+			]
+		},
+		{
+			"name": "revenue model",
+			"levels": [
+				[
+					"Negative trends in profit year-to-year",
+					"Profit only from selling energy"
+				],
+				[
+					"Stagnant/no noticeable trend in profit year-to-year",
+					"Profit from some services",
+					"Limited ability to turn new technologies to profitable services"
+				],
+				[
+					"Positive trend in profit year-to-year",
+					"Profit from multiple services",
+					"Ability to implement new technologies to gain profit"
+				]
+			]
+		}
+	]
+}

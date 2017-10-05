@@ -1,0 +1,29 @@
+/* serif */
+@font-face {
+  font-family: 'Slabo 27px';
+  src: local('Slabo 27px'), local('Slabo27px-Regular'),
+    url('../assets/fonts/Slabo27px-Regular.woff2') format('woff2'),
+    url('../assets/fonts/Slabo27px-Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* sans-serif */
+@font-face {
+	font-family: 'Titillium Web';
+	src: local('Titillium Web Regular'), local('TitilliumWeb-Regular'),
+		url('../assets/fonts/TitilliumWeb-Regular.woff2') format('woff2'),
+		url('../assets/fonts/TitilliumWeb-Regular.woff') format('woff');
+	font-style: normal;
+	font-weight: 400;
+}
+
+/* display */
+@font-face {
+	font-family: 'Lobster';
+	src: local('Lobster'), local('Lobster-Regular'),
+		url('../assets/fonts/Lobster-Regular.woff2') format('woff2'),
+		url('../assets/fonts/Lobster-Regular.woff') format('woff');
+	font-style: normal;
+	font-weight: 400;
+}
