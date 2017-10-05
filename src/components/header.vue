@@ -26,10 +26,10 @@ export default {
 <style scoped>
 .pvd-header {
 	display: flex;
+	flex: 0 0 auto;
 	justify-content: center;
 	padding: 0 64px;
-	transition: background-color 0.5s,
-							box-shadow 0.5s;
+	transition: background-color 0.5s, box-shadow 0.5s;
 }
 
 .pvd-header:hover {
@@ -61,14 +61,14 @@ export default {
 }
 
 .site-nav--link {
-	border: 2px dashed transparent;
+	border-bottom: 2px dashed transparent;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-size: 24px;
 	padding: 0.25em 0.5em;
 	text-transform: uppercase;
-	transition: border-color 0.25s, transform 0.25s;
+	transition: border-bottom-color 0.25s, transform 0.25s;
 	min-width: 8ch;
 	margin: 0 12px;
 	font-family: 'Titillium Web', 'Arial', serif;
@@ -81,6 +81,6 @@ export default {
 
 .site-nav--link:hover {
 	transform: translateZ(6px);
-	border-color: white;
+	border-bottom-color: white;
 }
 </style>
