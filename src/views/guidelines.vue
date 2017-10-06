@@ -1,34 +1,32 @@
 <template>
   <div class="view-guidelines">
-    <table>
-			<thead>
-				<th v-for="(s, idx) in score" :key="idx">{{ s.name }}</th>
-			</thead>
-			<tr>
-				<td v-for="(s, idx) in score" :key="idx">
-					<ul>
-						<li v-for="(d, dIdx) in s.description" :key="dIdx">{{ d }}</li>
-					</ul>
-				</td>
-			</tr>
-		</table>
+		<level-card-group selectable>
+			<level-card v-for="(score, sIdx) in scores" :key="sIdx">
+				<span slot="header">{{ score.name }}</span>
+				<ul slot="content">
+					<li v-for="(desc, dIdx) in score.description" :key="dIdx">{{ desc }}</li>
+				</ul>
+			</level-card>
+		</level-card-group>
   </div>
 </template>
 
 <script>
-import score from '../data/score.json';
+import scores from '../data/scores.json';
 
 export default {
 	name: 'view-guidelines',
 
 	data() {
 		return {
-			score
+			scores
 		};
 	}
 }
 </script>
 
 <style scoped>
-
+.view-guidelines {
+	display: flex;
+}
 </style>

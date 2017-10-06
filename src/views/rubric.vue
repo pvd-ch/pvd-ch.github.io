@@ -1,19 +1,19 @@
 <template>
   <div class="view-rubric">
-    <table>
-			<thead>
-				<th>Business Model Pillars</th>
-				<th v-for="(level, idx) in rubric.levels" :key="idx">{{ level }}</th>
-			</thead>
-			<tr v-for="(pillar, pIdx) in rubric.pillars" :key="pIdx">
-				<th>{{ pillar.name }}</th>
-				<td v-for="(level, lIdx) in pillar.levels" :key="lIdx">
-					<ul>
+		<rubric-section v-for="(pillar, pIdx) in rubric.pillars" :key="pIdx">
+			<span slot="title">{{ pillar.name }}</span>
+			<ul slot="aside">
+				<li v-for="(pDesc, pdIdx) in pillar.description" :key="pdIdx">{{ pDesc }}</li>
+			</ul>
+			<level-card-group selectable slot="content">
+				<level-card v-for="(level, lIdx) in pillar.levels" :key="lIdx">
+					<span slot="header">{{ rubric.levels[lIdx] }}</span>
+					<ul slot="content">
 						<li v-for="(desc, dIdx) in level" :key="dIdx">{{ desc }}</li>
 					</ul>
-				</td>
-			</tr>
-		</table>
+				</level-card>
+			</level-card-group>
+		</rubric-section>
   </div>
 </template>
 
@@ -21,7 +21,7 @@
 import rubric from '../data/rubric.json';
 
 export default {
-	name: 'vue-rubric',
+	name: 'view-rubric',
 
 	data() {
 		return {
@@ -40,9 +40,14 @@ table, th, td {
 	border: 1px solid white;
 }
 
+th {
+	text-transform: capitalize;
+}
+
 th, td {
 	padding: 8px;
 	transition: background-color 0.25s, transform 0.25s;
+	box-shadow: inset 0 0 6px black;
 }
 
 td {
@@ -52,5 +57,6 @@ td {
 td:hover {
 	background-color: rgba(255, 255, 255, 0.1);
 	transform: translateZ(6px);
+	box-shadow: none;
 }
 </style>
