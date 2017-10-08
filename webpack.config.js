@@ -94,7 +94,8 @@ if (process.env.NODE_ENV === 'production') {
 		}),
 		new CopyWebpackPlugin([
 			{ from: 'index.html' },
-			{ from: 'package.json' }
+			{ from: 'package.json' },
+			{ from: 'favicon.ico' }
 		])
   ]);
 }
