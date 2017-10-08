@@ -1,10 +1,10 @@
 <template>
   <header class="pvd-header">
-		<router-link to="/" class="logo">Swiss PV Diffusion</router-link>
+		<router-link :to="{ name: 'home' }" class="logo">Swiss PV Diffusion</router-link>
     <nav class="site-nav">
-      <router-link to="/guidelines" class="site-nav--link">instructions</router-link>
-      <router-link to="/rubric" class="site-nav--link">self-assessment</router-link>
-      <router-link to="/about" class="site-nav--link">our project</router-link>
+      <router-link :to="{ name: 'instructions' }" class="site-nav--link">instructions</router-link>
+      <router-link :to="{ name: 'rubric' }" class="site-nav--link">self-assessment</router-link>
+      <router-link :to="{ name: 'about' }" class="site-nav--link">our project</router-link>
     </nav>
   </header>
 </template>

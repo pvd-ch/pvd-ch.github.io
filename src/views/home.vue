@@ -6,10 +6,10 @@
 			<span class="title--lower">PV Diffusion</span>
 		</div>
 		<div>
-			<router-link to="/">
+			<router-link :to="{ name: 'instructions' }">
 				<pvd-button>take the self-assesment</pvd-button>
 			</router-link>
-			<router-link to="/">
+			<router-link :to="{ name: 'about' }">
 				<pvd-button>explore our project</pvd-button>
 			</router-link>
 		</div>
@@ -39,5 +39,9 @@ export default {
 
 .title--lower {
 	font-size: 144px;
+}
+
+.pvd-button {
+	margin: 0 8px;
 }
 </style>

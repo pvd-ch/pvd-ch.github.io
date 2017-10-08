@@ -1,16 +1,16 @@
 <template>
-  <div class="view-guidelines">
+  <div class="view-instructions">
   </div>
 </template>
 
 <script>
 export default {
-	name: 'view-guidelines'
+	name: 'view-instructions'
 }
 </script>
 
 <style scoped>
-.view-guidelines {
+.view-instructions {
 	display: flex;
 }
 </style>
