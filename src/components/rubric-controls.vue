@@ -23,7 +23,7 @@ export default {
 			this.$router.push({ query: null });
 		},
 		evalRubric() {
-			this.$router.push({ name: 'guidelines', query: this.$route.query });
+			this.$router.push({ name: 'evaluation', query: this.$route.query });
 		}
 	}
 }

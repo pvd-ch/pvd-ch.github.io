@@ -5,6 +5,7 @@ import About from './views/about.vue';
 import Guidelines from './views/guidelines.vue';
 import Home from './views/home.vue';
 import Rubric from './views/rubric.vue';
+import Evaluation from './views/evaluation.vue';
 
 Vue.use(Router);
 
@@ -29,6 +30,11 @@ export default new Router({
       name: 'rubric',
       path: '/rubric',
       component: Rubric
-    }
+		},
+		{
+			name: 'evaluation',
+			path: '/rubric/evaluation',
+			component: Evaluation
+		}
   ]
 });

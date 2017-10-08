@@ -3,13 +3,17 @@
 		<table class="rubric">
 			<tr class="rubric-header">
 				<th></th>
-				<th v-for="(level, lIdx) in rubric.levels" :key="lIdx" class="rubric-header--level">{{ level }}</th>
+				<th v-for="(level, lIdx) in rubric.levels" :key="lIdx" class="rubric-header--level">
+					{{ level.name }}
+					<br>
+					{{ level.value }}
+				</th>
 			</tr>
 			<tr v-for="(pillar, pIdx) in rubric.pillars" :key="pIdx" class="rubric-row">
 				<th class="rubric-row--header">{{ pillar.name }}</th>
-				<td @click="handleClick(pIdx, lIdx)" :selected="selected[pIdx] === lIdx" v-for="(levels, lIdx) in pillar.levels" :key="lIdx" class="rubric-row--description">
+				<td @click="handleClick(pIdx, rubric.levels[lIdx].value)" :selected="selected[pIdx] === rubric.levels[lIdx].value" v-for="(level, lIdx) in pillar.levels" :key="lIdx" class="rubric-row--description">
 					<ul>
-						<template v-for="(desc, dIdx) in levels">
+						<template v-for="(desc, dIdx) in level">
 							<hr v-if="dIdx" :key="dIdx">
 							<li :key="dIdx">{{ desc }}</li>
 						</template>

@@ -1,8 +1,41 @@
 {
 	"levels": [
-		"resistant",
-		"responsive",
-		"sustainable"
+		{
+			"name": "resistant",
+			"value": 1,
+			"range": {
+				"min": 4,
+				"max": 6
+			},
+			"description": [
+				"This utility has not yet adapted or considered the changes in the market. The survivability of the current business model is at risk.",
+				"In order to survive, it is recommended for this utility to look at the grade 2 category to begin implementing changes and to innovate their current business model."
+			]
+		},
+		{
+			"name": "responsive",
+			"value": 2,
+			"range": {
+				"min": 7,
+				"max": 9
+			},
+			"description": [
+				"This utility is aware of the changing landscape and is in the process of adapting their business model.",
+				"In order to continue innovating, it is recommended for this utility to look at the grade 3 category to further explore niche technologies and secondary markets."
+			]
+		},
+		{
+			"name": "sustainable",
+			"value": 3,
+			"range": {
+				"min": 10,
+				"max": 12
+			},
+			"description": [
+				"This utility has accepted the changing landscape and is integrating niche technologies and secondary markets.  It is currently having positive year-to-year profits and has the ability to implement new services to its business model.",
+				"In order to continue to be sustainable, it is recommended for this utility to continue to adapt to the changing energy landscape.  Maintain the criteria listed in the grade 3 category and improve on any categories that are below this grade."
+			]
+		}
 	],
 	"pillars": [
 		{

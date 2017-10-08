@@ -2,8 +2,8 @@
   <header class="pvd-header">
 		<router-link to="/" class="logo">Swiss PV Diffusion</router-link>
     <nav class="site-nav">
+      <router-link to="/guidelines" class="site-nav--link">instructions</router-link>
       <router-link to="/rubric" class="site-nav--link">self-assessment</router-link>
-      <router-link to="/guidelines" class="site-nav--link">guidelines</router-link>
       <router-link to="/about" class="site-nav--link">our project</router-link>
     </nav>
   </header>
