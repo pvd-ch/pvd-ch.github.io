@@ -1,16 +1,22 @@
 <template>
-	<div class="level-card">
+	<div :emphasize="selected" class="level-card">
 		<div class="header">
 			<slot name="header"></slot>
 		</div>
 		<hr>
-		<slot name="content"></slot>
+		<slot></slot>
 	</div>
 </template>
 
 <script>
 export default {
-	name: 'level-card'
+	name: 'level-card',
+
+	data() {
+		return {
+			selected: false
+		};
+	}
 }
 </script>
 
@@ -18,18 +24,24 @@ export default {
 .level-card {
 	padding: 16px;
 	margin: 16px;
-	border: 2px dashed white;
-	transition-property: opacity, transform;
+	border: 1px solid black;
+	transition-property: opacity, transform, background-color;
 	transition-duration: 0.25s;
-	width: 32ch;
-}
-
-.level-card[de-emphasize], .level-card-group[selectable]:hover > .level-card:not(:hover) {
-	opacity: 0.5;
+	width: 24ch;
+	background-color: black;
+	color: white;
+	border-radius: 5px;
 }
 
 .level-card[emphasize], .level-card-group[selectable]:hover > .level-card:hover {
-	transform: translateZ(8px);
+	transform: translateZ(12px);
 	border-style: solid;
+	color: black;
+	background-color: white;
+}
+
+ul {
+	list-style: square;
+	padding-left: 2ch;
 }
 </style>

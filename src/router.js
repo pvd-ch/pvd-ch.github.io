@@ -30,8 +30,5 @@ export default new Router({
       path: '/rubric',
       component: Rubric
     }
-  ],
-  scrollBehavior(to, from, savedPosition) {
-    return savedPosition || { x: 0, y: 0 };
-  }
+  ]
 });

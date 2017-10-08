@@ -6,7 +6,6 @@
       <router-link to="/guidelines" class="site-nav--link">guidelines</router-link>
       <router-link to="/about" class="site-nav--link">our project</router-link>
     </nav>
-		<div class="right-spacer"></div>
   </header>
 </template>
 
@@ -25,25 +24,21 @@ export default {
 
 <style scoped>
 .pvd-header {
+	background-image: linear-gradient(to right, #434343 0%, black 100%);
+	box-shadow: 0 0 16px black;
+	color: white;
 	display: flex;
 	flex: 0 0 auto;
-	justify-content: center;
+	justify-content: space-between;
 	padding: 0 64px;
-	transition: background-color 0.5s, box-shadow 0.5s;
-}
-
-.pvd-header:hover {
-	background-color: rgba(255, 255, 255, 0.1);
-	box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
+	align-self: center;
 	font-family: 'Lobster', 'Arial', sans-serif;
 	font-size: 32px;
-	align-self: center;
-	flex: 1 0 0;
 	opacity: 1;
-	transition: opacity 0.5s, transform 0.25s;
+	transition: opacity 0.5s;
 }
 
 .logo.router-link-exact-active {
@@ -51,36 +46,30 @@ export default {
 	pointer-events: none;
 }
 
-.right-spacer {
-	flex-grow: 1;
-}
-
 .site-nav {
 	display: flex;
-	padding: 16px;
 }
 
 .site-nav--link {
-	border-bottom: 2px dashed transparent;
-	display: flex;
 	align-items: center;
-	justify-content: center;
-	font-size: 24px;
-	padding: 0.25em 0.5em;
-	text-transform: uppercase;
-	transition: border-bottom-color 0.25s, transform 0.25s;
-	min-width: 8ch;
-	margin: 0 12px;
+	border-bottom: 0.15em dashed transparent;
+	border-top: 0.15em dashed transparent;
+	display: flex;
 	font-family: 'Titillium Web', 'Arial', serif;
+	font-size: 1.5em;
+	justify-content: center;
+	margin: 0 0.5em;
+	padding: 0.5em 0.5em;
+	text-transform: uppercase;
+	transition: border-bottom-color 0.25s;
+}
+
+.site-nav--link:hover {
+	border-bottom-color: white;
 }
 
 .site-nav--link.router-link-active {
 	border-bottom-color: white;
-	border-style: solid;
-}
-
-.site-nav--link:hover {
-	transform: translateZ(6px);
-	border-bottom-color: white;
+	border-bottom-style: solid;
 }
 </style>

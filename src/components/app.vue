@@ -30,13 +30,13 @@ export default {
 }
 
 main {
-	margin: 16px;
-	overflow-y: auto;
 	flex-grow: 1;
+	padding: 16px;
+	overflow: auto;
 }
 
 .route-enter-active, .route-leave-active {
-  transition: opacity 0.25s, transform 0.25s;
+  transition: opacity 0.125s, transform 0.125s;
 }
 
 .route-enter {
