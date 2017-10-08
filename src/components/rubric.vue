@@ -57,6 +57,8 @@ export default {
 }
 
 th {
+	font-family: 'Titillium Web', 'Arial', sans-serif;
+	font-weight: bold;
 	font-size: 1.5em;
 }
 
