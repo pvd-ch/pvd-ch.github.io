@@ -5,6 +5,14 @@
 			<br>
 			<span class="title--lower">PV Diffusion</span>
 		</div>
+		<div>
+			<router-link to="/">
+				<pvd-button>take the self-assesment</pvd-button>
+			</router-link>
+			<router-link to="/">
+				<pvd-button>explore our project</pvd-button>
+			</router-link>
+		</div>
   </div>
 </template>
 
@@ -15,9 +23,14 @@ export default {
 </script>
 
 <style scoped>
+
+.view-home {
+	text-align: center;
+}
+
 .title {
 	font-family: 'Lobster', sans-serif;
-	text-align: center;
+	margin-bottom: 64px;
 }
 
 .title--upper {

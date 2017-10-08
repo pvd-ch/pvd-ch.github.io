@@ -64,9 +64,6 @@ th, td {
 	border: 1px solid black;
 	vertical-align: middle;
 	text-align: center;
-}
-
-td {
 	padding: 0.75em 0.75ch;
 }
 
