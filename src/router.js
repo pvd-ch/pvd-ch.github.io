@@ -2,7 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 
 import About from './views/about.vue';
-import Guidelines from './views/guidelines.vue';
+import Instructions from './views/instructions.vue';
 import Home from './views/home.vue';
 import Rubric from './views/rubric.vue';
 import Evaluation from './views/evaluation.vue';
@@ -22,9 +22,9 @@ export default new Router({
       component: Home
 		},
 		{
-      name: 'guidelines',
-      path: '/guidelines',
-      component: Guidelines
+      name: 'instructions',
+      path: '/intructions',
+      component: Instructions
     },
     {
       name: 'rubric',
