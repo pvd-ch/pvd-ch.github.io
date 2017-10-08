@@ -1,12 +1,14 @@
 <template>
   <div class="pvd-app">
-    <pvd-header :hide-logo="atHome"></pvd-header>
+    <pvd-header :hide-logo="atHome" class="pvd-header"></pvd-header>
 		<main>
-			<transition appear mode="out-in" name="route">
-				<keep-alive>
-					<router-view></router-view>
-				</keep-alive>
-			</transition>
+			<div class="router-wrap">
+				<transition appear mode="out-in" name="route">
+					<keep-alive>
+						<router-view></router-view>
+					</keep-alive>
+				</transition>
+			</div>
 		</main>
   </div>
 </template>
@@ -24,14 +26,17 @@ export default {
 </script>
 
 <style scoped>
-.pvd-app {
-	display: flex;
-	flex-direction: column;
+.pvd-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
 }
 
 main {
-	flex-grow: 1;
-	padding: 16px;
+	height: 100vh;
+	padding: 72px 16px 16px 16px;
 	overflow: auto;
 }
 
@@ -47,5 +52,10 @@ main {
 .route-leave-to {
 	transform: translateZ(-16px);
 	opacity: 0;
+}
+
+.router-wrap {
+	max-width: 1280px;
+	margin: 0 auto;
 }
 </style>
