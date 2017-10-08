@@ -1,7 +1,7 @@
 <template>
   <div class="view-instructions">
 		<div>
-			In order to best understand the state of your utility, you will fill out a short rubric. This rubric is broken into foru distinct sections: core strategies, innovation & flexibility, customer interface, and revenue model. The scores correspond to the adaptiveness and survivability of the utility in the changing landscape of the Swiss energy sector. Below you can find the definitions of the business model pillars used for creating the rubric.
+			In order to best understand the state of your utility, you will fill out a short rubric. This rubric is broken into four distinct sections: core strategies, innovation & flexibility, customer interface, and revenue model. The scores correspond to the adaptiveness and survivability of the utility in the changing landscape of the Swiss energy sector. Below you can find the definitions of the business model pillars used for creating the rubric.
 		</div>
 		<table>
 			<tr>
