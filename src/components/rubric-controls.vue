@@ -25,8 +25,7 @@ export default {
 </script>
 
 <style scoped>
-.rubric-controls {
-	display: flex;
-	justify-content: space-between;
+.rubric-controls > *:last-child {
+	float: right;
 }
 </style>

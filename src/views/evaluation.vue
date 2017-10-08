@@ -1,28 +1,31 @@
 <template>
 	<div class="view-evaluation">
-		<div class="evaluation-group">
-			<div>
-				<router-link :to="{ name: 'rubric', query: $route.query }">
-					<pvd-button>back</pvd-button>
-				</router-link>
-			</div>
-			<table>
-				<tr>
-					<th :score="inRange(rubricTotal, level.range.min, level.range.max)" v-for="(level, lIdx) in rubric.levels" :key="lIdx" :width="`${100 / rubric.levels.length}%`" :style="{ backgroundColor: level.color }">
-						{{ level.name }}
-					</th>
-				</tr>
-				<tr>
-					<td :score="inRange(rubricTotal, level.range.min, level.range.max)" v-for="(level, lIdx) in rubric.levels" :key="lIdx">
-						<ul>
-							<template v-for="(desc, dIdx) in level.description">
-								<hr v-if="dIdx" :key="dIdx">
-								<li :key="dIdx">{{ desc }}</li>
-							</template>
-						</ul>
-					</td>
-				</tr>
-			</table>
+		<div>
+			<router-link :to="{ name: 'rubric', query: $route.query }">
+				<pvd-button>back</pvd-button>
+			</router-link>
+		</div>
+		<table>
+			<tr>
+				<th :score="inRange(rubricTotal, level.range.min, level.range.max)" v-for="(level, lIdx) in rubric.levels" :key="lIdx" :width="`${100 / rubric.levels.length}%`" :style="{ backgroundColor: level.color }">
+					{{ level.name }}
+				</th>
+			</tr>
+			<tr>
+				<td :score="inRange(rubricTotal, level.range.min, level.range.max)" v-for="(level, lIdx) in rubric.levels" :key="lIdx">
+					<ul>
+						<template v-for="(desc, dIdx) in level.description">
+							<hr v-if="dIdx" :key="dIdx">
+							<li :key="dIdx">{{ desc }}</li>
+						</template>
+					</ul>
+				</td>
+			</tr>
+		</table>
+		<div class="learn-more">
+			<router-link :to="{ name: 'about' }">
+				<pvd-button>learn more about our project</pvd-button>
+			</router-link>
 		</div>
 	</div>
 </template>
@@ -58,24 +61,16 @@ export default {
 </script>
 
 <style scoped>
-.view-evaluation {
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-}
-
-.evaluation-group {
-	max-width: 1280px;
-}
-
 table {
 	table-layout: fixed;
 	margin-top: 12px;
 }
 
 th {
+	font-family: 'Titillium Web', 'Arial', sans-serif;
+	font-weight: bold;
 	font-size: 1.5em;
-	text-transform: uppercase;
+	text-transform: capitalize;
 }
 
 th, td {
@@ -97,5 +92,10 @@ hr {
 
 th:not([score]), td:not([score]) {
 	opacity: 0.25;
+}
+
+.learn-more {
+	margin-top: 16px;
+	text-align: center;
 }
 </style>
